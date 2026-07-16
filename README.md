@@ -1,4 +1,14 @@
 # 中国城市生活成本与性价比分析 | City Cost of Living Analysis
+<div align="center">
+
+![生活成本排名](images/01_cost_ranking.png)
+
+![收入vs支出性价比](images/04_salary_vs_cost.png)
+
+**💰 税前1万，在各城市分别能剩多少钱？**
+
+</div>
+
 
 <div align="center">
 
