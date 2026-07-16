@@ -15,10 +15,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# 配置中文字体
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS', 'SimHei', 'PingFang SC', 'Heiti TC']
-plt.rcParams['axes.unicode_minus'] = False
+# 配置中文字体（macOS）
+# 注意：plt.style.use 可能会覆盖字体设置，所以必须先设置 style，再设置字体。
 plt.style.use('seaborn-v0_8-whitegrid')
+
+import matplotlib
+matplotlib.rcParams['font.family'] = "sans-serif"
+matplotlib.rcParams['font.sans-serif'] = [
+    "Arial Unicode MS",
+    "PingFang SC",
+    "Heiti TC",
+    "STHeiti",
+] + matplotlib.rcParams.get('font.sans-serif', [])
+matplotlib.rcParams['axes.unicode_minus'] = False
+
 sns.set_palette('Set2')
 
 # 导入工具函数
