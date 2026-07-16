@@ -1,148 +1,180 @@
 # 中国城市生活成本与性价比分析 | City Cost of Living Analysis
+
 <div align="center">
 
+[![GitHub stars](https://img.shields.io/github/stars/harryhu321/city-cost-of-living-analysis?style=for-the-badge)](https://github.com/harryhu321/city-cost-of-living-analysis/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/harryhu321/city-cost-of-living-analysis?style=for-the-badge)](https://github.com/harryhu321/city-cost-of-living-analysis/network)
+![License status](https://img.shields.io/badge/License-Not%20Specified-lightgrey?style=for-the-badge)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Cities](https://img.shields.io/badge/Coverage-15%20Cities-FF8C42?style=for-the-badge)](#-项目亮点--highlights)
+
+### 税前月薪 1 万，在北京每月大约只剩 **1320 元**；在成都还能剩下 **3020 元**。
+
+### If your gross monthly salary is RMB 10,000, you may keep only **RMB 1,320** in Beijing, but still save about **RMB 3,020** in Chengdu.
+
+用 15 个中国城市的收入、租房、餐饮、交通和房价数据，回答一个所有打工人都关心的问题：**去哪座城市，最容易活得体面、存下钱、甚至买得起房？**
+
+A data storytelling project comparing 15 Chinese cities across salary, living cost, savings potential, and housing pressure.
+
+</div>
+
+---
+
+## ✨ 项目亮点 | Highlights
+
+- 📌 **一句话看结论**：不是工资越高越容易攒钱，城市选择会直接改变你的剩余现金流。
+- 📊 **6 张核心图表**：生活成本、支出结构、收入 vs 支出、可支配收入、买房压力、重点城市雷达图一站看全。
+- 🧠 **适合真实决策**：适用于应届生选城市、职场人跳槽、内容创作者做选题、数据分析学习练手。
+- 🏙️ **覆盖 15 个代表性城市**：一线 / 新一线 / 二线城市同维度对比，更容易发现“高薪陷阱”和“性价比洼地”。
+- 🔍 **可复现分析流程**：提供 Notebook、批量生成脚本与图表输出，适合二次扩展和继续迭代。
+
+## 🖼️ 图表预览 | Visual Preview
+
+最值得先看的图放在前面：先看“赚多少、剩多少”，再看“花在哪、房压多大”。
+
+### 1) 每月到底还能剩多少钱？ | Disposable Income Ranking
+![各城市月度可支配收入排名](images/05_disposable_income_ranking.png)
+
+### 2) 高工资城市真的更划算吗？ | Salary vs Cost
+![收入 vs 支出性价比](images/04_salary_vs_cost.png)
+
+### 3) 哪些城市生活成本最高？ | Cost Ranking
 ![生活成本排名](images/01_cost_ranking.png)
 
-![收入vs支出性价比](images/04_salary_vs_cost.png)
+### 4) 买一套 90㎡ 房子，要攒多少年？ | Housing Affordability
+![买房压力排名](images/06_housing_affordability.png)
 
-**💰 税前1万，在各城市分别能剩多少钱？**
+### 5) 重点城市多维对比 | Radar Comparison
+![重点城市雷达图](images/03_radar_chart.png)
 
-</div>
+### 6) 钱主要花在哪？ | Cost Breakdown
+![月度支出构成对比](images/02_cost_breakdown.png)
 
+## 📌 核心发现 | Key Takeaways
 
-<div align="center">
+- **北京** 税前月薪 13400 元，估算税后约 10720 元，月均支出约 9400 元，最后只剩 **1320 元**。
+- **成都** 税前月薪 10000 元，估算税后约 8000 元，月均支出约 4980 元，还能剩下 **3020 元**，存款率约 **37.8%**。
+- **杭州** 在样本中拥有最高月度可支配收入，约 **3570 元**，说明“高收入 + 相对可控支出”会显著提升体验。
+- **长沙 / 重庆 / 西安** 在买房压力和生活成本上更友好，是“想稳稳过日子”的典型候选城市。
+- **北上深** 仍然是薪资上限最高的地方，但高房租和高日常支出会快速吞噬现金流。
 
-![Python](https://img.shields.io/badge/Python-Data_Analysis-blue.svg)
-![Visualization](https://img.shields.io/badge/Visualization-Matplotlib_Plotly-green.svg)
-![Cities](https://img.shields.io/badge/覆盖城市-15+-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+> 注：以上结论基于仓库当前内置的 2025 年样例数据，适合做城市横向比较与方法展示，不应替代个人真实决策。
 
-**💰 税前1万，在各城市分别能剩多少钱？**
+## 📖 这个项目解决什么问题？ | Why This Project Matters
 
-用数据说话，帮你选择最适合的城市发展
+对于很多人来说，选城市并不是“喜欢哪里”这么简单，而是一个关于收入天花板、生活压力、存钱速度和未来定居成本的综合决策。这个项目把抽象的“城市性价比”拆成可量化的数据指标，尽量回答这些现实问题：**哪里更容易攒钱？哪里高薪但不一定高幸福感？哪里更适合作为长期落脚点？**
 
-</div>
+This repository turns a vague life decision into something measurable. Instead of only asking “Which city pays more?”, it also asks “How much can you actually keep every month?” and “How hard is it to buy a home there?”
 
-## 📖 项目简介 | About
+## 🧮 数据说明与分析方法 | Data & Methodology
 
-对于应届生和职场人来说，「去哪个城市发展」是人生重要决策之一。本项目从**生活成本、收入水平、买房压力、性价比**等多个维度，对中国主要城市进行系统性对比分析。
+### 数据来源 | Data Sources
 
-This project provides a comprehensive comparison of cost of living, salaries, and housing affordability across major Chinese cities, helping you make more informed career and relocation decisions.
+当前仓库使用的是可直接运行的样例数据，字段设计与真实采集流程参考以下公开来源：
 
-### 🎯 核心问题
-- 各城市生活成本到底差多少？
-- 工资高就一定存得多吗？
-- 哪个城市性价比最高？
-- 攒钱买房，各城市分别需要多少年？
-- 不同人群适合去哪些城市？
+- **生活成本**：Numbeo、公开消费价格信息
+- **工资数据**：国家统计局、各城市统计公报 / 人社公开数据
+- **房价与租金**：房价行情网站、房产平台公开数据
+- **交通成本**：各地地铁 / 公交官网
 
-## 📊 分析维度 | Analysis Dimensions
+详细说明可见：[`data/README.md`](data/README.md)
 
-| 维度 | 说明 |
-|------|------|
-| 🏠 **生活成本排名** | 房租、餐饮、交通、水电等月度支出对比 |
-| 📈 **收入 vs 支出** | 各城市税后工资与生活成本对比，算性价比 |
-| 💰 **可支配收入** | 每月到底能存下多少钱？存款率排名 |
-| 🏘️ **买房压力** | 各城市全款买房需要攒多少年 |
-| 🎯 **多维度雷达图** | 重点城市全方位对比 |
-| 💡 **城市选择建议** | 不同人群的城市推荐 |
+### 分析方法 | Methodology
 
-## 🏆 部分结论预览 | Highlights
+项目核心逻辑非常直观：
 
-> ⚠️ 以下为示例数据结论，完整分析请运行 Notebook
+1. 以税前月薪估算税后收入（当前样例按约 **80%** 估算）。
+2. 汇总房租、餐饮、交通、水电网、其他支出，得到月均生活成本。
+3. 用 `税后收入 - 月均支出` 计算可支配收入与存款率。
+4. 用 90㎡ 住房总价 ÷ 年储蓄额，粗略估算买房压力。
+5. 通过图表对比城市间的收入、支出、房价与综合性价比。
 
-- **性价比之王**：长沙、成都、重庆 —— 收入中等但生活成本低，存款率高
-- **搞钱首选**：深圳、上海、北京 —— 薪资天花板最高，但生活压力也最大
-- **均衡之选**：广州、杭州 —— 收入不错，压力比北上深小一截
-- **买房最容易**：长沙、重庆、西安 —— 房价相对友好，定居压力小
+### 数据字段 | Main Metrics
 
-## 📁 项目结构 | Project Structure
+| 指标 | 含义 |
+| --- | --- |
+| `avg_salary_before_tax` | 税前月薪 |
+| `avg_salary_after_tax` | 估算税后月薪 |
+| `monthly_expenses` | 房租 + 餐饮 + 交通 + 水电网 + 其他月支出 |
+| `disposable_income` | 每月可支配收入 |
+| `savings_rate` | 存款率 |
+| `years_to_buy_house` | 全款购买 90㎡ 住房所需年数 |
 
-```
-city-cost-of-living-analysis/
-├── notebooks/
-│   └── city_cost_analysis.ipynb  # 完整分析报告
-├── data/
-│   └── README.md                 # 数据来源说明
-├── src/
-│   └── utils.py                  # 可视化工具函数
-├── images/                       # 分析图表（运行后生成）
-├── requirements.txt              # 依赖包
-└── README.md
-```
+## 🚀 如何运行 | How to Run
 
-## 🛠️ 技术栈 | Tech Stack
+### 环境依赖 | Requirements
 
-- **数据处理**：Pandas, NumPy
-- **可视化**：Matplotlib, Seaborn, Plotly
-- **分析方法**：描述性统计、指数计算、多维度对比
+- Python **3.10+**
+- 建议使用虚拟环境
+- 依赖见 [`requirements.txt`](requirements.txt)
 
-## 🚀 快速开始 | Getting Started
+### 安装与运行 | Setup
 
 ```bash
-# 1. 克隆项目
-git clone https://github.com/你的用户名/city-cost-of-living-analysis.git
+git clone https://github.com/harryhu321/city-cost-of-living-analysis.git
 cd city-cost-of-living-analysis
-
-# 2. 安装依赖
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
+```
 
-# 3. 运行 Notebook
+### 方式一：直接生成全部图表 | Option 1: Generate All Charts
+
+```bash
+python3 run_analysis.py
+```
+
+运行完成后，图表会输出到 `images/` 目录。
+
+### 方式二：交互式查看 Notebook | Option 2: Explore in Jupyter Notebook
+
+```bash
 jupyter notebook notebooks/city_cost_analysis.ipynb
 ```
 
-## 📋 数据来源 | Data Sources
+## 📂 项目结构 | Project Structure
 
-项目内置示例数据，真实数据推荐来源：
+```text
+city-cost-of-living-analysis/
+├── notebooks/
+│   └── city_cost_analysis.ipynb  # 交互式分析 Notebook
+├── data/
+│   └── README.md                 # 数据来源与字段说明
+├── src/
+│   └── utils.py                  # 计算与绘图工具函数
+├── images/                       # 已生成图表
+├── run_analysis.py               # 批量生成图表脚本
+├── requirements.txt              # Python 依赖
+└── README.md
+```
 
-| 数据类型 | 推荐来源 |
-|---------|---------|
-| 生活成本 | [Numbeo](https://www.numbeo.com/cost-of-living/) |
-| 平均工资 | 国家统计局、各城市人社局 |
-| 房价租金 | 中国房价行情网、链家 |
-| 交通成本 | 各地地铁/公交官网 |
+## 🎯 适合谁看？ | Use Cases
 
-详细数据收集说明见 [data/README.md](./data/README.md)
+- 正在纠结去哪座城市发展的应届生 / 求职者
+- 想换城市、想知道“收入是否撑得起生活”的职场人
+- 想做 **数据分析 / 数据可视化作品集** 的学习者
+- 想写城市、房价、打工人生存话题的内容创作者
 
-## 📈 可视化预览 | Visualizations
+## 🤝 欢迎贡献 | Contributing
 
-- 各城市生活成本排名柱状图
-- 支出构成堆叠图（房租/餐饮/交通占比）
-- 重点城市多维度雷达图
-- 收入 vs 支出散点图
-- 可支配收入/买房压力排名
-- （更多图表运行 Notebook 查看）
+如果你觉得这个项目有意思，欢迎用任何一种方式参与：
 
-## 💡 适用场景 | Use Cases
-
-- 应届生/求职者选择城市
-- 考虑换城市工作的打工人
-- 数据分析练习项目
-- 数据可视化参考
-- 社交媒体内容创作素材
-
-## 🤝 如何贡献 | Contributing
-
-欢迎贡献！你可以：
-
-- ⭐ Star 支持一下
-- 🐛 提交 Issue 反馈问题
-- ✏️ 补充更多城市数据
-- 🎨 优化可视化效果
-- 📝 补充更多分析维度
+- 给仓库点一个 **Star**，帮助更多人看到它
+- 提交 Issue，指出数据、逻辑或表达上的改进空间
+- 增加更多城市或更新到最新年份的数据
+- 优化图表设计、交互体验或英文说明
+- Fork 后基于相同方法做更多国家 / 城市对比
 
 ## 📝 免责声明 | Disclaimer
 
-- 项目数据为公开数据整理和估算，仅供参考
-- 具体薪资因行业、公司、个人能力差异很大
-- 选择城市请结合行业机会、家庭、个人偏好等综合考虑
+本项目主要用于数据分析展示、方法说明和城市横向对比。仓库中的数值为样例数据与公开信息整理后的估算，不构成投资、求职或迁居建议。不同城市中的行业、岗位、个人消费习惯和家庭背景差异，会显著影响真实结果。
 
 ---
 
 <div align="center">
 
-**觉得有用的话点个 Star 支持一下吧 ⭐**
+### ⭐ 如果这个项目帮你更快理解了“去哪座城市更值”，欢迎点个 Star 支持一下！
 
-*用数据，看清每个城市的真实生活成本*
+**用数据看城市，不靠滤镜做决定。**
 
 </div>
