@@ -4,7 +4,7 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/harryhu321/city-cost-of-living-analysis?style=for-the-badge)](https://github.com/harryhu321/city-cost-of-living-analysis/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/harryhu321/city-cost-of-living-analysis?style=for-the-badge)](https://github.com/harryhu321/city-cost-of-living-analysis/network)
-![License status](https://img.shields.io/badge/License-Not%20Specified-lightgrey?style=for-the-badge)
+![License status](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Cities](https://img.shields.io/badge/Coverage-15%20Cities-FF8C42?style=for-the-badge)](#-项目亮点--highlights)
 
