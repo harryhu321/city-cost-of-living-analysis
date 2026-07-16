@@ -2,7 +2,6 @@
 
 <div align="center">
 
-<img src="images/cover.png" alt="Cover - 月薪1万在各城市能剩多少钱" width="100%"/>
 
 
 [![GitHub stars](https://img.shields.io/github/stars/harryhu321/city-cost-of-living-analysis?style=for-the-badge)](https://github.com/harryhu321/city-cost-of-living-analysis/stargazers)
