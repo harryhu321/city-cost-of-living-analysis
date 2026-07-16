@@ -2,11 +2,15 @@
 
 <div align="center">
 
+<img src="images/cover.png" alt="Cover - 月薪1万在各城市能剩多少钱" width="100%"/>
+
+
 [![GitHub stars](https://img.shields.io/github/stars/harryhu321/city-cost-of-living-analysis?style=for-the-badge)](https://github.com/harryhu321/city-cost-of-living-analysis/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/harryhu321/city-cost-of-living-analysis?style=for-the-badge)](https://github.com/harryhu321/city-cost-of-living-analysis/network)
 ![License status](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Cities](https://img.shields.io/badge/Coverage-15%20Cities-FF8C42?style=for-the-badge)](#-项目亮点--highlights)
+[![Streamlit](https://img.shields.io/badge/Live_Demo-Coming_Soon-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](#-如何运行--how-to-run)
 
 ### 税前月薪 1 万，在北京每月大约只剩 **1320 元**；在成都还能剩下 **3020 元**。
 
@@ -33,22 +37,50 @@ A data storytelling project comparing 15 Chinese cities across salary, living co
 最值得先看的图放在前面：先看“赚多少、剩多少”，再看“花在哪、房压多大”。
 
 ### 1) 每月到底还能剩多少钱？ | Disposable Income Ranking
+
+> 💡 **杭州以月存 3,570 元登顶，北京仅剩 1,320 元垫底——工资最高不等于存得最多。**
+
 ![各城市月度可支配收入排名](images/05_disposable_income_ranking.png)
 
 ### 2) 高工资城市真的更划算吗？ | Salary vs Cost
+
+> 💡 **杭州、成都、广州落在"高性价比区"——收入不低、支出可控；北京上海收入虽高但支出几乎吃光工资。**
+
 ![收入 vs 支出性价比](images/04_salary_vs_cost.png)
 
 ### 3) 哪些城市生活成本最高？ | Cost Ranking
+
+> 💡 **上海月均支出 9,570 元，是重庆（4,370 元）的 2.2 倍——同一个国家，生活成本差出一倍多。**
+
 ![生活成本排名](images/01_cost_ranking.png)
 
 ### 4) 买一套 90㎡ 房子，要攒多少年？ | Housing Affordability
+
+> 💡 **长沙仅需 28.7 年全款买房，上海则需要 350+ 年——不吃不喝也买不起系列。**
+
 ![买房压力排名](images/06_housing_affordability.png)
 
 ### 5) 重点城市多维对比 | Radar Comparison
+
+> 💡 **北京各维度"全面偏贵"，成都则在房租、餐饮、交通上全面低于一线——生活成本只有北京的 53%。**
+
 ![重点城市雷达图](images/03_radar_chart.png)
 
 ### 6) 钱主要花在哪？ | Cost Breakdown
+
+> 💡 **北京房租占税后收入的 39.2%，几乎吞掉四成工资；成都房租仅占 23.1%，负担直降一半。**
+
 ![月度支出构成对比](images/02_cost_breakdown.png)
+
+## 🧭 一眼选城
+
+| 如果你最在意… | 推荐城市 | 原因 |
+|:---:|:---:|:---|
+| 💰 **存钱速度** | 杭州、成都 | 杭州月存 3,570 元全场第一；成都月存 3,020 元且生活舒适 |
+| 🏠 **买房可行性** | 长沙、重庆 | 长沙 28.7 年、重庆 39.5 年即可全款买 90㎡，远低于一线 |
+| 📈 **薪资天花板** | 上海、北京 | 税前月薪 13,000+ 元，适合攒经验后带走 |
+| 🍜 **生活性价比** | 西安、重庆 | 月均支出不到 4,600 元，吃喝玩乐丰俭由人 |
+| ⚖️ **收入支出平衡** | 杭州、广州 | 工资不低 + 支出可控，"体面地活着"不难 |
 
 ## 📌 核心发现 | Key Takeaways
 
@@ -126,7 +158,15 @@ python3 run_analysis.py
 
 运行完成后，图表会输出到 `images/` 目录。
 
-### 方式二：交互式查看 Notebook | Option 2: Explore in Jupyter Notebook
+### 方式二：Streamlit 交互 Demo | Option 2: Interactive Demo
+
+```bash
+streamlit run app.py
+```
+
+打开浏览器访问 `http://localhost:8501`，输入你的税前月薪，对比不同城市的生活成本和存款潜力。
+
+### 方式三：交互式查看 Notebook | Option 3: Explore in Jupyter Notebook
 
 ```bash
 jupyter notebook notebooks/city_cost_analysis.ipynb
@@ -136,13 +176,15 @@ jupyter notebook notebooks/city_cost_analysis.ipynb
 
 ```text
 city-cost-of-living-analysis/
+├── app.py                        # Streamlit 交互 Demo
 ├── notebooks/
 │   └── city_cost_analysis.ipynb  # 交互式分析 Notebook
 ├── data/
 │   └── README.md                 # 数据来源与字段说明
 ├── src/
 │   └── utils.py                  # 计算与绘图工具函数
-├── images/                       # 已生成图表
+├── images/                       # 已生成图表（含封面图）
+├── .github/ISSUE_TEMPLATE/       # Issue 模板
 ├── run_analysis.py               # 批量生成图表脚本
 ├── requirements.txt              # Python 依赖
 └── README.md
@@ -159,11 +201,11 @@ city-cost-of-living-analysis/
 
 如果你觉得这个项目有意思，欢迎用任何一种方式参与：
 
-- 给仓库点一个 **Star**，帮助更多人看到它
-- 提交 Issue，指出数据、逻辑或表达上的改进空间
-- 增加更多城市或更新到最新年份的数据
-- 优化图表设计、交互体验或英文说明
-- Fork 后基于相同方法做更多国家 / 城市对比
+- ⭐ **给仓库点个 Star** — 让更多人看到这个项目
+- 🏙️ **[提交新城市请求](../../issues/new?template=city-request.md)** — 想看你的城市？告诉我们！
+- 🔧 **[提交数据修正](../../issues/new?template=data-correction.md)** — 发现数据有误？帮我们改进
+- 🍴 **Fork & PR** — 增加城市、优化图表、完善英文翻译
+- 💬 **分享到社交媒体** — 让更多打工人看到"选城市"的数据视角
 
 ## 📝 免责声明 | Disclaimer
 
