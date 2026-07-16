@@ -9,7 +9,7 @@
 ![License status](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Cities](https://img.shields.io/badge/Coverage-15%20Cities-FF8C42?style=for-the-badge)](#-项目亮点--highlights)
-[![Streamlit](https://img.shields.io/badge/Live_Demo-Coming_Soon-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](#-如何运行--how-to-run)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://city-cost-of-living-analysisbranchmain-gvvk65j2pshkbrekqykcg8.streamlit.app/)
 
 ### 税前月薪 1 万，在北京每月大约只剩 **1320 元**；在成都还能剩下 **3020 元**。
 
